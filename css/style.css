@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange-rgb: 243,128,32;
+    --light-blue-rgb: 79,140,200;
+    --blue-rgb: 0,81,127;
+    --purple-rgb: 65,54,128;
+    --dark-purple-rgb: 34,30,104;
+    --black-purple-rgb: 15,13,55;
+    --text-color: #221e68;
+}
+
+body {
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif;     */
+}
+
+.logo{
+    width: 90px;
+}
+
+.hereSection .ip span{
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.info h1{
+    max-width: 450px;
+    font-size: 2.5em;
+    margin: auto;
+    padding: .5em;
+    font-weight: 900;
+    color: var(--text-color);
+}
+.info span{
+    max-width: 450px;
+    font-size: 1.5em;
+    margin: auto;
+    padding: .5em;
+    font-weight: 900;
+    color: var(--text-color);
+}
+.platformBtns {
+    max-width: 750px;
+    margin: 0 auto;
+} 
+.platformBtns button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.platformBtns button i{
+    font-size: 1.7em;
+}
+.platformBtns button{
+    font-size: 1.5em;
+    font-weight: 400;
+    background: var(--text-color) !important;
+    border-radius: 7px;
+}
+
+.appOverviewSection {
+    padding: 7rem 0 !important;
+    position: relative;
+}
+.privacySection {
+    /* padding: 7rem 0 !important; */
+}
+.performenceSection {
+    padding: 7rem 0 !important;
+}
+.privacySection {
+    padding: 7rem 0 !important;
+}
+
+.platformBtnGroup {
+    max-width: 450px;
+}
+.footerSection {
+    padding: 7rem 0 !important;
+    max-height: 2000px;
+    overflow: hidden;
+
+}
+.footerSection p {
+    max-width: 450px;
+}
+.platformBtnGroup button {
+    font-size: 1em;
+    font-weight: 400;
+    background: var(--text-color) !important;
+    border-radius: 7px;
+    /* display: flex;
+    align-items: center; */
+}
+.platformBtnGroup button i{
+    font-size: 1.5em;
+}
+
+.footerSection img{
+    border-radius: 25px;
+}
+
+.footerSection .SVG-Blob4{
+    width: 100%;
+    position: inherit;
+    /* max-height: 1200px; */
+    transform: scale(1.8);
+    z-index: 1;
+}
+ 
+.eastereggSection svg{
+    z-index: 2;
+    width: 300px;
+    position: relative;
+     margin-top: -700px;
+}
+.blob1{
+    overflow: auto;
+}
+.SVG-Blob1{
+    width: 300px;
+    position: absolute;
+    right: 0;
+    scale: 3;
+    top: 60%;
+    z-index: -1;
+}
