@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -12,10 +13,6 @@
     --dark-purple-rgb: 34,30,104;
     --black-purple-rgb: 15,13,55;
     --text-title: #221e68;
-}
-
-body {
-    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif;     */
 }
 
 .logo{
@@ -227,4 +224,62 @@ body {
     font-size: 12px;
     font-weight: 400;
     font-style: italic;
+}
+
+/* privacySection */
+.privacySection1{
+    padding: 7rem 0 !important;
+}
+.privacySection_img1 img{
+    width: 380px !important;
+}
+.privacySection_card1 h1{
+    color: var(--text-title);
+    font-size: 30px;
+}
+.privacySection_card1 p{
+    color: var(--text-title);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* devicesSection */
+.devicesSection_img img{
+    width: 380px !important;
+}
+.devicesSection_card h1{
+    color: var(--text-title);
+    font-size: 30px;
+}
+.devicesSection_card p{
+    color: var(--text-title);
+    font-size: 20px;
+    font-weight: 400;
+}
+.devicesSection_card{
+    padding: 0 100px;
+}
+.devicesSection_card a{
+    color: var(--text-title);
+    text-decoration: underline;
+}
+
+/* blobs */
+.mockup_Blob1 svg{
+    position: absolute;
+    transform: scale(2);
+    top: 350px;
+    right: -350px;
+}
+.mockup_Blob2 svg{
+    position: absolute;
+    transform: scale(0.45);
+    top: -180%;
+    left: -160%;
+}
+.mockup_Blob3 svg{
+    position: absolute;
+    transform: scale(0.3);
+    top: -700px;
+    right: -1800px;
 }
