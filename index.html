@@ -61,6 +61,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/app.js"></script>
@@ -128,7 +130,7 @@
           <h1 class="p-0">The free app that makes your Internet safer.</h1>
           <span> Now available for even more devices. </span>
         </div>
-        <div class="container platformBtns">
+        <div class="container platformBtns d-none">
           <div class="row my-1 justify-content-center">
             <div class="col">
               <button class="btn btn-primary">
@@ -170,19 +172,19 @@
             <!--Grid row-->
             <div class="row">
               <!--Grid column-->
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <h2 class="font-weight-bold">
+              <div class="col-lg-6 mb-4 mb-lg-0 leftCard">
+                <h1 class="font-weight-bold">
                   You're one tap away from a safer Internet.
-                </h2>
+                </h1>
 
-                <p class="font-weight-bold">
+                <p class="">
                   When the Internet was built, computers weren’t mobile. They
                   sat in offices next to data centers. The Internet has changed
                   but the assumptions made 30 years ago are making your
                   experience slower and less secure.
                 </p>
 
-                <p class="font-weight-bold">
+                <p class="">
                   1.1.1.1 with WARP replaces the connection between your device
                   and the Internet with a modern, optimized, protocol.
                 </p>
@@ -195,7 +197,7 @@
 
               <!--Grid column-->
               <div
-                class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center"
+                class="appOverviewSection_img col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center"
               >
                 <img
                   src="https://1.1.1.1/media/warp-desktop.png"
@@ -209,7 +211,7 @@
           </section>
           <!--Section: Content-->
         </div>
-        <div class="blob1"> 
+        <div class="blob1">
           <svg class="SVG-Blob1" viewBox="0 0 1280 1505">
             <defs>
               <linearGradient
@@ -343,7 +345,7 @@
             <div class="row">
               <!--Grid column-->
               <div
-                class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center"
+                class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center privacySection_img"
               >
                 <img
                   src="https://1.1.1.1/media/warp-desktop-3.png"
@@ -354,19 +356,19 @@
               <!--Grid column-->
 
               <!--Grid column-->
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <h2 class="font-weight-bold">Fast. Free. Private.</h2>
+              <div class="col-lg-6 mb-4 mb-lg-0 privacySection_card">
+                <h1 class="font-weight-bold">Fast. Free. Private.</h1>
 
-                <p class="font-weight-bold">
+                <p class="">
                   Your Internet service provider can see every site and app you
                   use—even if they’re encrypted. Some providers even sell this
                   data, or use it to target you with ads.
                 </p>
-                <p class="font-weight-bold">
+                <p class="">
                   1.1.1.1 with WARP prevents anyone from snooping on you by
                   encrypting more of the traffic leaving your device.
                 </p>
-                <p class="font-weight-bold">
+                <p class="">
                   We believe privacy is a right. We won't sell your data, ever.
                 </p>
                 <a class="font-weight-bold" href="#">
@@ -391,10 +393,10 @@
             <!--Grid row-->
             <div class="row">
               <!--Grid column-->
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <h2 class="font-weight-bold">Use the Internet fast-lane</h2>
+              <div class="col-lg-6 mb-4 mb-lg-0 wrapSection_card">
+                <h1 class="font-weight-bold">Use the Internet fast-lane</h1>
 
-                <p class="font-weight-bold">
+                <p class="">
                   In addition to the full WARP service, WARP+ subscribers get
                   access to a larger network. More cities to connect to means
                   you’re likely to be closer to a Cloudflare data center – which
@@ -406,7 +408,7 @@
 
               <!--Grid column-->
               <div
-                class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center"
+                class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center wrapSection_img"
               >
                 <img
                   src="https://1.1.1.1/media/warp-desktop.png"
@@ -429,8 +431,8 @@
             <!--Grid row-->
             <div class="row d-flex justify-content-center">
               <!--Grid column-->
-              <div class="col-xl-6 col-md-8">
-                <h3 class="font-weight-bold">Built on a massive network.</h3>
+              <div class="col-xl-6 col-md-8 performenceSection_card">
+                <h2 class="font-weight-bold">Built on a massive network.</h2>
 
                 <p class="">
                   WARP is built on the same network that has made 1.1.1.1 the
@@ -440,11 +442,11 @@
                   Your connection to WARP is fast and reliable wherever you live
                   and wherever you go.
                 </p>
-                <div class="">
-                  <div class="text-left">
+                <div class="pS_progressbars">
+                  <div class="text-left progressDiv">
                     <div class="progress">
                       <div
-                        class="progress-bar"
+                        class="progress-bar activeBar"
                         role="progressbar"
                         style="width: 25%"
                         aria-valuenow="75"
@@ -454,7 +456,7 @@
                     </div>
                     <h4>1.1.1.1</h4>
                   </div>
-                  <div class="text-left">
+                  <div class="text-left progressDiv">
                     <div class="progress">
                       <div
                         class="progress-bar"
@@ -467,7 +469,7 @@
                     </div>
                     <h4>Google</h4>
                   </div>
-                  <div class="text-left">
+                  <div class="text-left progressDiv">
                     <div class="progress">
                       <div
                         class="progress-bar"
@@ -480,7 +482,7 @@
                     </div>
                     <h4>OpenDNS</h4>
                   </div>
-                  <div class="text-left">
+                  <div class="text-left progressDiv">
                     <div class="progress">
                       <div
                         class="progress-bar"
@@ -494,7 +496,9 @@
                     <h4>Verisign</h4>
                   </div>
                 </div>
-                <span> October, 2020 </span>
+                <div class="py-5">
+                  <span> October, 2020 </span>
+                </div>
               </div>
               <!--Grid column-->
             </div>
@@ -874,5 +878,108 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
     ></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      //   appOverviewSection
+      gsap.to(".leftCard", {
+        scrollTrigger: {
+          trigger: ".leftCard",
+          start: "top 80%",
+          end: "top 80px",
+          scrub: 1,
+          markers: true,
+        },
+        y: -100,
+        ease: "none",
+        duration: 3,
+      });
+
+      gsap.to(".appOverviewSection_img", {
+        scrollTrigger: {
+          trigger: ".appOverviewSection_img",
+          start: "top 80%",
+          end: "top 80px",
+          scrub: 1,
+          markers: true,
+        },
+        y: -130,
+        ease: "none",
+        duration: 3,
+      });
+
+      //   privacySection
+
+      gsap.to(".privacySection_card", {
+        scrollTrigger: {
+          trigger: ".privacySection_card",
+          start: "top 80%",
+          end: "top 80px",
+          scrub: 1,
+          markers: true,
+        },
+        y: -90,
+        ease: "none",
+        duration: 3,
+      });
+
+      gsap.to(".privacySection_img", {
+        scrollTrigger: {
+          trigger: ".privacySection_img",
+          start: "top 80%",
+          end: "top 80px",
+          scrub: 1,
+          markers: true,
+        },
+        y: -160,
+        ease: "none",
+        duration: 3,
+      });
+
+      //   wrapSection
+
+      gsap.to(".wrapSection_card", {
+        scrollTrigger: {
+          trigger: ".wrapSection_card",
+          start: "top 80%",
+          end: "top 80px",
+          scrub: 1,
+          markers: true,
+        },
+        y: -90,
+        ease: "none",
+        duration: 3,
+      });
+
+      gsap.to(".wrapSection_img", {
+        scrollTrigger: {
+          trigger: ".wrapSection_img",
+          start: "top 80%",
+          end: "top 80px",
+          scrub: 1,
+          markers: true,
+        },
+        y: -160,
+        ease: "none",
+        duration: 3,
+      });
+
+      //   performenceSection
+
+      gsap.to(".performenceSection_card", {
+        scrollTrigger: {
+          trigger: ".performenceSection_card",
+          start: "top 80%",
+          end: "top 80px",
+          scrub: 1,
+          markers: true,
+        },
+        y: -90,
+        ease: "none",
+        duration: 3,
+      });
+
+    </script>
   </body>
 </html>
