@@ -63,10 +63,18 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
+    <div class="d-none">
+        <p>This website craete for just learning purpose.</p>
+    </div>
     <div class="surface">
       <header>
         <!--Navbar-->
@@ -125,7 +133,7 @@
           />
         </div>
         <div class="info text-center">
-          <h1 class="p-0">The free app that makes your Internet safer.</h1>
+          <h1 class="p-0 mb-3">The free app that makes your Internet safer.</h1>
           <span> Now available for even more devices. </span>
         </div>
         <div class="container platformBtns d-none">
@@ -554,7 +562,7 @@
                 </p>
                 <a class="font-weight-bold" href="#">
                   Share with Twitter
-                  <i class="fas fa-angle-right ml-2"></i
+                  <i class="fas fa-angle-right"></i
                 ></a>
               </div>
               <!--Grid column-->
@@ -1225,8 +1233,8 @@
         </svg>
       </div>
 
-      <div class="eastereggSection">
-        <div class="d-flex justify-content-center align-items-center">
+      <div class="eastereggSection animate__animated animate__shakeX animate__delay-2s animate__slow animate__infinite">
+        <div class="d-flex justify-content-center align-items-center fireBall">
           <svg class="SVG-EEM" viewBox="0 0 443 172">
             <defs>
               <linearGradient
@@ -1277,6 +1285,7 @@
           </svg>
         </div>
       </div>
+      <div class="box"></div>
     </div>
 
     <!-- JQuery -->
@@ -1299,7 +1308,6 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
     ></script>
-
     <script src="./js/app.js"></script>
   </body>
 </html>

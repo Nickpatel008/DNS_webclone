@@ -15,6 +15,10 @@
     --text-title: #221e68;
 }
 
+body{
+    overflow-x: hidden; 
+}
+
 .logo{
     width: 90px;
 }
@@ -67,7 +71,7 @@
     /* padding: 7rem 0 !important; */
 }
 .performenceSection {
-    padding: 7rem 0 !important;
+    padding: 6rem 0 !important;
 }
 .privacySection {
     padding: 7rem 0 !important;
@@ -111,7 +115,7 @@
  
 .eastereggSection svg{
     z-index: 2;
-    width: 300px;
+    width: 280px;
     position: relative;
      margin-top: -700px;
 }
@@ -242,7 +246,14 @@
     font-size: 20px;
     font-weight: 400;
 }
+.privacySection_card1 a{
+    color: var(--text-title);
+    text-decoration: underline;
+}
 
+.privacySection_card1{
+    padding: 0 100px;
+} 
 /* devicesSection */
 .devicesSection_img img{
     width: 380px !important;
@@ -267,19 +278,19 @@
 /* blobs */
 .mockup_Blob1 svg{
     position: absolute;
-    transform: scale(2);
+    transform: scale(1.5);
     top: 350px;
     right: -350px;
 }
 .mockup_Blob2 svg{
     position: absolute;
-    transform: scale(0.45);
-    top: -180%;
+    transform: scale(0.40);
+    top: -150%;
     left: -160%;
 }
 .mockup_Blob3 svg{
     position: absolute;
     transform: scale(0.3);
-    top: -700px;
-    right: -1800px;
+    top: -500px;
+    right: -1500px;
 }
