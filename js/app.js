@@ -1,5 +1,6 @@
 console.log("From App.js");
 gsap.registerPlugin(ScrollTrigger);
+let tl = gsap.timeline();
 
 //   appOverviewSection
 gsap.to(".leftCard", {
@@ -27,7 +28,6 @@ gsap.to(".appOverviewSection_img", {
 });
 
 //   privacySection
-
 gsap.to(".privacySection_card", {
     scrollTrigger: {
         trigger: ".privacySection_card",
@@ -53,7 +53,6 @@ gsap.to(".privacySection_img", {
 });
 
 //   wrapSection
-
 gsap.to(".wrapSection_card", {
     scrollTrigger: {
         trigger: ".wrapSection_card",
@@ -79,7 +78,6 @@ gsap.to(".wrapSection_img", {
 });
 
 //   performenceSection
-
 gsap.to(".performenceSection_card", {
     scrollTrigger: {
         trigger: ".performenceSection_card",
@@ -140,4 +138,32 @@ gsap.to(".devicesSection_img", {
     y: "-80%",
     ease: "none",
     duration: 3
+});
+
+// ? reCaptcha...
+// let site_key = '6LdofBwmAAAAAJJh8F_ZYl-z4JsInfYxkOF8w2n2'
+// let secret_key = '6LdofBwmAAAAACQTBw_XqKuaWzhy-KNEF4bCCFd2'
+
+// function onSubmit(token) {
+//     document.getElementById("demo-form").submit();
+// }
+
+// ? pageOverlay || loader
+
+tl.set('.loader', {
+    display: 'block'
+}).set('.loader__element', {
+    transformOrigin: 'center left',
+}).to('.loader__element', 0.6, {
+    scaleX: 1,
+    ease: 'expo.inOut',
+    stagger: 0.1,
+}).set('.loader__element', {
+    transformOrigin: 'center right',
+}).to('.loader__element', 0.6, {
+    scaleX: 0,
+    ease: 'expo.inOut',
+    stagger: -0.1,
+}).set('.loader', {
+    display: 'none',
 });

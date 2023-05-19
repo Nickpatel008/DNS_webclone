@@ -294,3 +294,51 @@ body{
     top: -500px;
     right: -1500px;
 }
+
+/* pageOverlay */
+
+/* .pageOverlay{
+    width: 100%;
+    height: 100vh;
+    background: orange;
+    position: absolute;
+    z-index: 8888; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.pageOverlay_element{
+    width: 100%;
+    height: 100vh;
+    background: rgb(238, 255, 0);
+    position: absolute;
+    z-index: 9999; top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+} */
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+  }
+  .loader__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: center right;
+    background: #ffbc05;
+  }
+  .loader__element:first-of-type {
+    background: #f89900;
+  }
